@@ -104,5 +104,5 @@ Contribuições são bem‑vindas!
 
 ## 👤 Autores
 
-Desenvolvido por **AlbertEinsteinGlitchPoint** — [github.com/AlbertEinsteinGlitchPoint](https://github.com/AlbertEinsteinGlitchPoint/)
-Abraçado por **wgrando1993** — [github.com/wgrando1993](https://github.com/wgrando1993/)
+- Desenvolvido por **AlbertEinsteinGlitchPoint** — [github.com/AlbertEinsteinGlitchPoint](https://github.com/AlbertEinsteinGlitchPoint/)
+- Abraçado por **wgrando1993** — [github.com/wgrando1993](https://github.com/wgrando1993/)
