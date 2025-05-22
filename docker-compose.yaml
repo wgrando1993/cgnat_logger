@@ -1,15 +1,17 @@
 ---
 services:
   cgnatlogger:
+    image: grandow/cgnatlogger:beta4
     container_name: cgnatlogger
     restart: always
-    image: grandow/cgnatlogger:beta4
     volumes:
-      - "/srv/cgnatlogger/mysql:/var/lib/mysql"
-      - "/srv/cgnatlogger/logs:/var/log/mikrotik"
+      - "./mysql:/var/lib/mysql"
+      - "./logs:/var/log/mikrotik"
     environment:
       - TZ=America/Sao_Paulo
-      - MIKROTIK_IPS=10.1.1.9
+      # Endereço IP do(s) BRAS 
+      - MIKROTIK_IPS=10.0.0.1
+      #- MIKROTIK_IPS=10.0.0.1,10.0.0.2,10.0.0.3
     ports:
-      - 14402:80
+      - 80:80
       - 514:514/udp

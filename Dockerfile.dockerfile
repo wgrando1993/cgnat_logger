@@ -14,7 +14,7 @@ RUN apk update && \
 RUN mkdir -p /var/lib/mysql /var/log/mysql /var/log/nginx /var/www/html && \
     chown -R mysql:mysql /var/lib/mysql /var/log/mysql && \
     chown -R nginx:nginx /var/log/nginx /var/www/html
-#sed -i 's/^system();/#system();/' /etc/syslog-ng/syslog-ng.conf && \
+
 RUN sed -i 's/^#log(log_file);/log(log_file);/' /etc/syslog-ng/syslog-ng.conf && \
     sed -i 's/^[[:space:]]*system();/#&/' /etc/syslog-ng/syslog-ng.conf && \
     mkdir -p /etc/syslog-ng/conf.d && \
