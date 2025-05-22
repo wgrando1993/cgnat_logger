@@ -1,7 +1,8 @@
-<p align="center">
-  <img src="prints/Foto3.png" alt="CGNAT Logger Banner" width="70%">
-</p>
 # CGNAT Logger
+
+<p align="center">
+  <img src="prints/Foto3.png" alt="CGNAT Logger Banner" width="80%">
+</p>
 
 ![Issues](https://github.com/wgrando1993/cgnat_logger)
 ![Docker Image](https://github.com/wgrando1993/cgnat_logger)
