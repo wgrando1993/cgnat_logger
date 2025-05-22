@@ -51,10 +51,9 @@ services:
       - 80:80
       - 514:514/udp
 ```
-
-> 💡 A aplicação escuta **514/UDP** (syslog) e expõe a interface web em **80/TCP** por padrão.
-
-> 💡 Você pode utilizar mais de um BRAS simultaneamente apenas adicionando **IP1,IP2,IP3** no campo de environment em **MIKROTIK_IPS** mas atente-se pois quanto mais endereços o servidor estiver escutando e recebendo logs, maior será o espaço necessário em disco.
+>[!NOTE]
+- A aplicação escuta **514/UDP** (syslog) e expõe a interface web em **80/TCP** por padrão.
+- Você pode utilizar mais de um BRAS simultaneamente apenas adicionando **IP1,IP2,IP3** no campo de environment em **MIKROTIK_IPS** mas atente-se pois quanto mais endereços o servidor estiver escutando e recebendo logs, maior será o espaço necessário em disco.
 
 ---
 
@@ -67,9 +66,8 @@ No RouterOS, ajuste o *logging*:
 [/system logging action set [find name="remote"] remote=<SERVER_IP> src-address=<MIKROTIK_IP>]
 [/system logging add action=remote prefix=CGNAT]
 ```
-
+>[!TIP]
 > ⚠️ Substitua **<SERVER_IP>** pelo IP da máquina onde o CGNAT Logger está rodando.
-
 > ⚠️ Substitua **<MIKROTIK_IP>** pelo IP do Mikrotik que vai rodar o script acima, atente-se de colocar o mesmo IP que esta em **MIKROTIK_IPS** no docker-compose.yml.
 
 Agora, precisa criar uma regra para encaminhar as mensagens do CGNAT no firewall/filter do Mikrotik.
@@ -77,7 +75,7 @@ Agora, precisa criar uma regra para encaminhar as mensagens do CGNAT no firewall
 ```shell
 [/ip firewall filter add action=log chain=forward connection-state=new log-prefix=CGNAT src-address=<IP_PPPOE>]
 ```
-
+>[!TIP]
 > ⚠️ Substitua **<IP_PPPOE>** pela range que esta configurada o CGNAT.
 
 ---
