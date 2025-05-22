@@ -4,9 +4,6 @@
   <img src="prints/Foto3.png" alt="CGNAT Logger Banner" width="100%">
 </p>
 
-![Issues](https://img.shields.io/badge/Issues?link=https%3A%2F%2Fgithub.com%2Fwgrando1993%2Fcgnat_logger%2Ftree%2Fdocker)
-![Docker Images](https://img.shields.io/badge/Docker%20images?link=https%3A%2F%2Fgithub.com%2Fwgrando1993%2Fcgnat_logger%2Ftree%2Fdocker)
-
 ## 📌 Sobre o Projeto
 
 **CGNAT Logger** é uma aplicação em **PHP** que coleta e armazena logs de CGNAT enviados **exclusivamente por dispositivos Mikrotik RouterOS**.  
