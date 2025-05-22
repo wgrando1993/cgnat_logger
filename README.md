@@ -1,11 +1,11 @@
 # CGNAT Logger
 
 <p align="center">
-  <img src="prints/Foto3.png" alt="CGNAT Logger Banner" width="80%">
+  <img src="prints/Foto3.png" alt="CGNAT Logger Banner" width="100%">
 </p>
 
-![Issues](https://github.com/wgrando1993/cgnat_logger)
-![Docker Image](https://github.com/wgrando1993/cgnat_logger)
+![Issues](https://img.shields.io/badge/Issues?link=https%3A%2F%2Fgithub.com%2Fwgrando1993%2Fcgnat_logger%2Ftree%2Fdocker)
+![Docker Images](https://img.shields.io/badge/Docker%20images?link=https%3A%2F%2Fgithub.com%2Fwgrando1993%2Fcgnat_logger%2Ftree%2Fdocker)
 
 ## 📌 Sobre o Projeto
 
@@ -36,7 +36,7 @@ docker-compose up -d
 ### 2. Subir com Docker Compose
 Copie todo o conteudo abaixo e crie um arquivo docker-compose.yml para rodar, ou, se utiliza alguma ferramenta como portainer, crie uma nova stack com esse mesmo codigo.
 
-```bash
+```yaml
 ---
 services:
   cgnatlogger:
