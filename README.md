@@ -89,6 +89,8 @@ Abra [http://localhost/](http://localhost/) e utilize os campos de busca para fi
 - Porta de origem ou destino  
 - Data/Hora
 
+>![TIP]
+> Por padrão o usuario e senha de acesso é **admin**, recomendo fortemente que ao efetuar o primeiro acesso, crie o seu usuario e remova o admin.
 ---
 
 ## 📝 Contribuindo
