@@ -63,11 +63,11 @@ No RouterOS, ajuste o *logging*:
 
 ```shell
 [/system logging set 0 disabled=yes]
-[/system logging action set [find name="remote"] remote=<SERVIDOR> src-address=<MIKROTIK_IP>]
+[/system logging action set [find name="remote"] remote=<SERVER_IP> src-address=<MIKROTIK_IP>]
 [/system logging add action=remote prefix=CGNAT]
 ```
 
-> Substitua **<SERVIDOR>** pelo IP da máquina onde o CGNAT Logger está rodando.
+> Substitua **<SERVER_IP>** pelo IP da máquina onde o CGNAT Logger está rodando.
 > Substitua **<MIKROTIK_IP>** pelo IP do Mikrotik que vai rodar o script acima, atente-se de colocar o mesmo IP que esta em **MIKROTIK_IPS** no docker-compose.yml.
 
 Agora, precisa criar uma regra para encaminhar as mensagens do CGNAT no firewall/filter do Mikrotik.
