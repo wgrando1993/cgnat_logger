@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="prints/Foto3.png" alt="CGNAT Logger Banner" width="70%">
+</p>
 # CGNAT Logger
 
 ![Issues](https://github.com/wgrando1993/cgnat_logger)
